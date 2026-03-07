@@ -1,4 +1,4 @@
-public class Lista100 {
+public class Primeros100 {
     public static void main(String[] args) {
         cien();
     }
