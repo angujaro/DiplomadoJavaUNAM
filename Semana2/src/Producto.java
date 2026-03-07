@@ -55,6 +55,17 @@ public class Producto {
         }
     }
 
+    @Override
+    public String toString(){ //se manda a llamar en instanciación porque es un string y al ser concatenado en ese programa, se dispara
+        String resultado = "Soy un producto ";
+        resultado += "llamado " + this.nombre;
+        resultado += " de color " + this.color;
+        resultado += " con precio de $  " + this.precio;
+
+
+        return resultado;
+    }
+
     public boolean alta(){
         //aqui estara el codigo para registrar en la bbdd
         // un nuevio producto

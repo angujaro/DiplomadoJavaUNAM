@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class Instanciacion {
 
-
     public static void despliega(Producto x){
         System.out.println("Producto: "+x);
         System.out.println("\tNombre: "+x.nombre);
@@ -15,11 +14,19 @@ public class Instanciacion {
         System.out.println("*** Ejemplo de Instanciación de clases (Creación de objetos) ***");
         //Clase objeto = new constructor();
 
-        Cliente cliente = new Cliente();
+        Cliente uno = new Cliente();
+        System.out.println("Primer cliente: "+uno);
+
+        Cliente dos = new Cliente(98);
+        System.out.println("Primer cliente: "+dos);
+
+        Cliente tres = new Cliente("Andrea");
+        System.out.println("Primer cliente: "+tres);
+
 
         //Prueba de constructor que recibe un int
         System.out.println("Prueba de constructor que recibe un int");
-        Producto objeto3 = new Producto(123);
+        Producto objeto3 = new Producto(1234);
         despliega(objeto3);
 
 
