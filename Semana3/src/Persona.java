@@ -1,4 +1,4 @@
-public abstract class Persona {
+public abstract class Persona implements Icrud{
     // Atributos
     private String nombre;
     private String rfc;
@@ -58,8 +58,7 @@ public abstract class Persona {
     }
 
     public void setEdad(int edad) {
-        if(edad >= 18)
-        this.edad = edad;
+        if(edad >= 18) this.edad = edad;
     }
 
     // toString

@@ -5,6 +5,11 @@ public class Herencia {
         System.out.println("*** Herencia ***");
 
 
+        System.out.println("Métodos estáticos");
+        System.out.println(Cliente.totalDeClientes());
+        System.out.println("** Atributos estáticos **");
+        System.out.println(Cliente.bono);
+        Cliente.bono = 0.07;
         System.out.println("---------------- Clase Persona ---------------");
         // Clase Persona
         // Instanciar la clase Persona
@@ -29,6 +34,8 @@ public class Herencia {
         o3.setEdad(19);
         o3.setUsuario("lucia123");
         System.out.println("Cliente -> "+o3);
+        System.out.println(o3.totalDeClientes());
+        System.out.println(o3.bono);
 
         System.out.println("---------------- Cliente VIP ---------------");
         ClienteVIP o4 = new ClienteVIP();

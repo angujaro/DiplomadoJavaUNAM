@@ -1,4 +1,4 @@
-public final class Asociado extends Persona {
+public final class Asociado extends Persona implements Icrud {
     // Todo Asociado ES Persona
     // Atributos
     private String licencia;
@@ -26,6 +26,26 @@ public final class Asociado extends Persona {
     }
     public void generaCFDI(){
 
+    }
+
+    // Metodos de la interfaz Icrud
+    public boolean create() // INSERT
+    {
+        // Aqui va el INSERT a la tabla asociados
+        return true;
+    }
+
+    public  boolean read(){
+        // Implementa el SELECT a asociados
+        return true;
+    }
+    public  boolean update(){
+        // Implementa el UPDATE a asociados
+        return true;
+    }
+    public  boolean delete(){
+        // Implementa el DELETE a asociados
+        return true;
     }
 
     public void setEdad (int edad){
